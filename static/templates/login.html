@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>login</title>
+	<link rel="stylesheet" type="text/css" href="slide navbar style.css">
+<link href="static/css/login.css" rel="stylesheet">
+</head>
+<body>
+	
+	<div class="main">  	
+		<input type="checkbox" id="chk" aria-hidden="true">
+
+			<div class="login" >
+				<form id="login-form">
+					<label for="chk" aria-hidden="true">Login</label>
+					<input type="email" name="email" placeholder="Email" required="" id="login-email" autofocus>
+					<input type="password" name="password" placeholder="Password" required="" id="login-password">
+					<button id="login-button">Login</button>
+				</form>
+			</div>
+
+			<div class="signup" id="signup-class">
+				<form id="signup-form">
+					<label for="chk" aria-hidden="true">Sign up</label>
+					<input type="text" name="first_name" placeholder="First name" required="" id="signup-first-name" autofocus>
+					<input type="text" name="last_name" placeholder="Last name" required="" id="signup-last-name" autofocus>
+					<input type="email" name="email" placeholder="Email" required="" id="signup-email" autofocus>
+					<input type="password" name="password" placeholder="Password" required="" id="signup-password">
+					<button id="signup-button">Sign up</button>
+				</form>
+			</div>
+	</div>
+	<script src="static/js/login.js"></script>
+</body>
+</html>

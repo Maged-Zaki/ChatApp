@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/index.css">
+    
+    <!-- css awsone -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>ChatApp</title>
+</head>
+<body>
+    <section class="msger">
+        <header class="msger-header">
+          <div class="msger-header-title" >
+            <img src="static/images/logo.png" alt="">
+            <button id="logout-button" style="display: none;">Logout</button>
+            <button id="login-button" style="display: none;">Login</button>
+          </div>
+
+
+          <div class="msger-header-options">
+            <!-- <span><i class="fas fa-cog"></i></span> -->
+          </div>
+        </header>
+      
+        <main class="msger-chat" id="chat">
+          <div id="show-more-div" page="1">Show more</div>
+          <!-- div to append messages to -->
+          <div id="append-message-to-me"></div>
+          
+        </main>
+      
+        <form class="msger-inputarea" id="send-message-form">
+          <input type="text" class="msger-input" placeholder="Enter your message..." id="send-message-input" autofocus>
+          <button type="submit" class="msger-send-btn" id="send-message-button">Send</button>
+        </form>
+      </section>  
+      <script src="https://cdn.socket.io/4.6.0/socket.io.min.js" integrity="sha384-c79GN5VsunZvi+Q/WObgk2in0CbZsHnjEqvFxC5DxHn9lTfNce2WW6h2pH6u/kF+" crossorigin="anonymous"></script>
+      <script src="static/js/index.js"></script>
+</body>
+</html>
