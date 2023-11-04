@@ -39,7 +39,7 @@ MONGODB_URL = your-mongo-atlas-url
 SECRET_KEY = your-secret-key
 ```
 
-
+**Lastly to start the server**
 ```
 npm start
 ```
